@@ -1,0 +1,13 @@
+AddHandler server-parsed .html
+
+Redirect 301 /cpa-accountant-the-woodlands.html http://www.joemoughon.com
+Redirect 301 /cpa-accountant-katy.html http://www.joemoughon.com
+Redirect 301 /cpa-accountant-sugarland.html http://www.joemoughon.com
+Redirect 301 /cpa-houston-heights.html http://www.joemoughon.com
+Redirect 301 /cpa-memorial-houston.html http://www.joemoughon.com
+Redirect 301 /cpa-missouri-city.html http://www.joemoughon.com
+Redirect 301 /cpa-northwest-houston.html http://www.joemoughon.com
+Redirect 301 /cpa-south-houston.html http://www.joemoughon.com
+Redirect 301 /cpa-spring-branch.html http://www.joemoughon.com
+Redirect 301 /income-tax-for-small-business-owners.html http://www.joemoughon.com
+Redirect 301 /public-speaker-joe-moughon-cpa-houston.html http://www.joemoughon.com

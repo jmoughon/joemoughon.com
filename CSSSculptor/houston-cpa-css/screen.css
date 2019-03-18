@@ -1,0 +1,219 @@
+/* This rule resets a core set of elements so that they will appear consistent across browsers. Without this rule, content styled with an h1 tag, for example, would appear in different places in Firefox and Internet Explorer because each browser has a different top margin default value. By resetting these values to 0, the elements will initially be rendered in an identical fashion and their properties can be easily defined by the designer in any subsequent rule. */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+}
+/* The body is the outermost layout component and contains the visible page content. Setting properties for the body element will help to create consistent styling of the page content and more manageable CSS. Besides using the body element to set global properties, it is common to use the body element to set the background color of the page and create a centered container for the page content to display. */
+body {
+	background-color: #3e3435;
+	color: #2e2d2c;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 14px;
+	margin: 0 0 0 0; /* Sets the margin properties for an element using shorthand notation (top, right, bottom, left) */
+	padding: 0 0 0 0; /* Sets the padding properties for an element using shorthand notation (top, right, bottom, left) */
+	text-align: center; /* Centers the page content container in IE 5 browsers. */
+}
+p {
+	margin-top: 3px;
+	font-size: 13px;
+	line-height: 17px;
+}
+.fltrt {
+	float: right;
+	margin: 10px;
+}
+
+/* Commonly used to style page titles. */
+h1 {
+	color: #B08900;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 18px;
+}
+/* Commonly used to style section titles. */
+h2 {
+	color: #B08900;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 16px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+h3 {
+	font-size: 14px;
+	color: #B08900;
+}
+
+/* Sets the style for unvisited links. */
+a,  a:link {
+	color: #041E73;
+	font-weight: bold;
+	text-decoration: none;
+}
+#outerWrapper #contentWrapper #leftColumn1 p a {
+	color: #6A4E00;
+	font-weight: bold;
+}
+
+/* Sets the style for visited links. */
+a:visited {
+	color: #B58D11;
+	font-weight: bold;
+	text-decoration: none;
+}
+/* Sets the style for links on mouseover. */
+a:hover {
+  color: #c92c17;
+  text-decoration: underline;
+}
+/* Sets the style for a link that has focus. */
+a:focus {
+  color: #c92c17;
+}
+/* Sets the style for a link that is being activated/clicked. */
+a:active {
+  color: #732600;
+}
+/* This is a container for the page content. It is common to use the container to constrain the width of the page content and allow for browser chrome to avoid the need for horizontal scrolling. For fixed layouts you may specify a container width and use auto for the left and right margin to center the container on the page. IE 5 browser require the use of text-align: center defined by the body element to center the container. For liquid layouts you may simply set the left and right margins to center the container on the page. */
+#outerWrapper {
+	background-color: #fff;
+	margin: 0 auto 0 auto; /* Sets the margin properties for an element using shorthand notation (top, right, bottom, left) */
+	text-align: left; /* Redefines the text alignment defined by the body element. */
+	width: 900px;
+}
+#outerWrapper #header {
+	background-color: #bd9c76;
+	border-bottom: solid 1px #826a50; /* Sets the bottom border properties for an element using shorthand notation */
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 15px; /* Sets the padding properties for an element using shorthand notation (top, right, bottom, left) */
+}
+#outerWrapper #contentWrapper {
+  background-image: url("../houston-cpa-images/contentWrapper_bg.png");
+  background-repeat: repeat-y;
+  overflow: hidden;
+}
+#outerWrapper #contentWrapper #leftColumn1 {
+	background-color: #002B46;
+	border-right: solid 1px #bd9c76; /* Sets the right border properties for an element using shorthand notation */
+	float: left;
+	padding: 10px 10px 10px 10px; /* Sets the padding properties for an element using shorthand notation (top, right, bottom, left) */
+	width: 200px;
+	text-align: left;
+}
+#outerWrapper #contentWrapper #leftColumn1 p {
+	color: #AE8700;
+	text-align: left;
+}
+#outerWrapper #contentWrapper #leftColumn1 h1 {
+	text-align: left;
+}
+#outerWrapper #contentWrapper #leftColumn1 h2 {
+	text-align: left;
+}
+
+
+/* Contains the main page content. When using a mutliple column layout the margins will be set to account for the floated columns' width, margins, and padding. */
+#outerWrapper #contentWrapper #content {
+	padding: 20px; /* Sets the padding properties for an element using shorthand notation (top, right, bottom, left) */
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 220px;
+}
+#outerWrapper #footer {
+	background-color: #002B46;
+	border-top: solid 1px #bd9c76; /* Sets the top border properties for an element using shorthand notation */
+	padding: 10px 10px 10px 10px; /* Sets the padding properties for an element using shorthand notation (top, right, bottom, left) */
+	color: #B08900;
+	text-align: center;
+}
+#outerWrapper #footer p a {
+	color: #B08900;
+}
+
+.fltlft {
+	float: left;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#outerWrapper #header table tr td h1 {
+	text-align: right;
+	font-size: 12px;
+	color: #b38f11;
+	margin-right: 8px;
+}
+#outerWrapper #contentWrapper #leftColumn1 table tr td a {
+	color: #b38f11;
+}
+#outerWrapper #contentWrapper #content #Accountant-Houston tr td a {
+	color: #000;
+	font-weight: normal;
+}
+#outerWrapper #contentWrapper #content #certified-public-accountant tr td a {
+	font-weight: normal;
+	color: #000;
+}
+
+.mswd {
+	font-size: 9px;
+}
+#outerWrapper #contentWrapper #leftColumn1 ul li {
+	color: #AE8700;
+}
+#outerWrapper #contentWrapper #leftColumn1 p a {
+	color: #AE8700;
+}
+#outerWrapper #contentWrapper #leftColumn1 h1 a {
+	color: #AF8809;
+}
+#outerWrapper #footer p a {
+	font-size: 11px;
+}
+#outerWrapper #contentWrapper #leftColumn1 h6 a {
+	color: #CCC;
+	text-align: left;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+#outerWrapper #contentWrapper #leftColumn1 h5 a {
+	color: #CCC;
+}
+#outerWrapper #contentWrapper #leftColumn1 h5 {
+	color: #B08900;
+	text-align: left;
+	font-weight: bold;
+	font-size: 12px;
+}
+.large {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #B08900;
+}
+.underline {
+	color: #B08900;
+	text-decoration: underline;
+}
+.strikeout {
+	color: #F00;
+	text-decoration: line-through;
+}
+.italic {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-weight: bold;
+	color: #002B46;
+	font-size: 22px;
+	line-height: 24px;
+}
+.red {
+	font-size: 14px;
+	font-style: italic;
+	color: #F00;
+}

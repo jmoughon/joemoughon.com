@@ -1,0 +1,87 @@
+ul#cssmw2 {
+  cursor: default;
+  list-style-type: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  width: 0;
+}
+ul#cssmw2 ul {
+  cursor: default;
+  font-size: 0;
+  list-style-type: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+ul#cssmw2 ul li {
+  background-image: none;
+  border-bottom: solid 1px black;
+  margin-bottom: -1px;
+}
+ul#cssmw2 li {
+  zoom:1;
+  background-image: none;
+  border-bottom: solid 1px black;
+  margin-bottom: -1px;
+  padding: 0 0 0 0;
+  position: relative;
+  white-space: nowrap;
+  z-index: 100;
+}
+ul#cssmw2 li ul {
+  display: none;
+  top: 0;
+}
+ul#cssmw2 li.hover ul {
+  display: block;
+  position: absolute;
+}
+
+ul#cssmw2 li.current ul {
+  position: absolute;
+}
+ul#cssmw2 li {
+  zoom:1;
+  background-image: none;
+}
+ul#cssmw2 li a, ul#cssmw2 li a.link {
+  background-color: #002B46;
+  background-image: url("../cssmw2_images/arrow.gif");
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  border-bottom: dotted 1px #9BB6D2;
+  color: #B58400;
+  display: block;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 0 0 0;
+  padding: 5px 10px 5px 5px;
+  text-decoration: none;
+  width: 180px;
+  outline-style: none;
+}
+ul#cssmw2 li * a {
+  height: auto;
+  width: auto;
+}
+ul#cssmw2 li span * a {
+  height: auto;
+  width: auto;
+}
+ul#cssmw2 li.hover a, ul#cssmw2 li.hover a.link {
+  background-color: #B58400;
+  border-bottom: dotted 1px #9BB6D2;
+  color: #EAEFF5;
+  text-decoration: none;
+  outline-style: none;
+}
+
+ul#cssmw2 li.current a.current, ul#cssmw2 li.current a.current.link {
+  background-color: #B58400;
+  border-bottom: dotted 1px #9BB6D2;
+  color: #EAEFF5;
+  text-decoration: none;
+  outline-style: none;
+}
